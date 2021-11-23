@@ -11,5 +11,31 @@ module.exports = {
     description: `Gatsby awesome blog site with dark/night color mode`,
     author: `@majhirockzz`,
   },
-  plugins: [`gatsby-plugin-styled-components`, `gatsby-plugin-react-helmet`],
+  plugins: [
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [{ resolve: `gatsby-remark-images` }],
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+  ],
 }
