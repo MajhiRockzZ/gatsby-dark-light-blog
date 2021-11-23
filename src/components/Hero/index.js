@@ -11,7 +11,11 @@ const query = graphql`
         frontmatter {
           heroImage {
             childImageSharp {
-              gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+              gatsbyImageData(
+                width: 2000
+                placeholder: TRACED_SVG
+                layout: CONSTRAINED
+              )
             }
           }
           heroImageBtnLink
