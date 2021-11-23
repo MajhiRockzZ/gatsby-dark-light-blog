@@ -11,5 +11,5 @@ module.exports = {
     description: `Gatsby awesome blog site with dark/night color mode`,
     author: `@majhirockzz`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-styled-components`],
 }
