@@ -1,9 +1,7 @@
 import React, { useContext } from "react"
 import { ThemeProvider } from "styled-components"
-
 import { ModeContext } from "../../context/ModeProvider"
-
-import { GlobalStyles, lightTheme, darkTheme } from "../../styles/GlobalStyles"
+import { darkTheme, GlobalStyles, lightTheme } from "../../styles/GlobalStyles"
 
 const Layout = ({ children }) => {
   const [darkMode] = useContext(ModeContext)
