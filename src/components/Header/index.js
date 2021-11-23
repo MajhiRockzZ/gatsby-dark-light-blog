@@ -5,6 +5,7 @@ import ModeButton from "../ModeButton"
 import { ModeContext } from "../../context/ModeProvider"
 import { Wrapper, Logo } from "./Header.styles"
 import Hamburger from "../../components/Hamburger"
+import MobileMenu from "../../components/MobileMenu"
 
 const query = graphql`
   {
@@ -37,6 +38,7 @@ const Header = ({ siteTitle = `` }) => {
   return (
     <Wrapper>
       <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <MobileMenu menuOpen={menuOpen} items={menu} />
       <Menu items={menu} />
       <Link to="/">
         <Logo src={logo.publicURL} alt={siteTitle} />
