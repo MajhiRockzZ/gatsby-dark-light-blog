@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Gatsby dark light blog`,
+    description: `Gatsby awesome blog site with dark/night color mode`,
+    author: `@majhirockzz`,
+  },
   plugins: [],
 }
