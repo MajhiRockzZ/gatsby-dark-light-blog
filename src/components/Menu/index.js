@@ -1,0 +1,22 @@
+import React from "react"
+import { Link } from "gatsby"
+
+import { Nav } from "./Menu.styles"
+
+const Menu = ({ items }) => {
+  return (
+    <Nav>
+      {items.map(item => {
+        return (
+          <li key={item.id}>
+            <Link to={item.link} activeClassName="active">
+              {item.name}
+            </Link>
+          </li>
+        )
+      })}
+    </Nav>
+  )
+}
+
+export default Menu
