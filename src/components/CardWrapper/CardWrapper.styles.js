@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #201c29;
+    background: ${props => props.theme.colors.background};
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
       inset -2px -2px 2px rgba(0, 0, 0, 0.25);
@@ -22,8 +22,8 @@ export const Wrapper = styled.section`
       90deg,
       #201c29,
       #201c29 1px,
-      #17141d 0,
-      #17141d
+      ${props => props.theme.colors.background} 0,
+      ${props => props.theme.colors.background}
     );
   }
 `
