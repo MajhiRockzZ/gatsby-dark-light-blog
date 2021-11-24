@@ -9,7 +9,7 @@ export const Wrapper = styled.article`
   min-width: 250px;
   padding: 1.5rem;
   border-radius: 16px;
-  background: #17141d;
+  background: ${props => props.theme.colors.background};
   transition: 0.2s;
 
   :hover {
