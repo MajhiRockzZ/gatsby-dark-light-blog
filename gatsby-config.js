@@ -14,6 +14,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-dark-light-blog`,
+        short_name: `blog`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `standalone`,
+        icon: `src/images/gatsby-icon.png`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [{ resolve: `gatsby-remark-images` }],
