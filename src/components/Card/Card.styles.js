@@ -10,17 +10,12 @@ export const Wrapper = styled.article`
   padding: 1.5rem;
   border-radius: 16px;
   background: #17141d;
-  box-shadow: -1rem 0 3rem #000;
   transition: 0.2s;
 
   :hover {
     transform: translateY(-1rem);
   }
 
-  :hover ~ .Wrapper {
-    // TODO: need fix
-    transform: translateX(130px);
-  }
   :not(:first-child) {
     margin-left: -130px;
   }

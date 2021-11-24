@@ -9,10 +9,11 @@ import {
   Header,
   Tags,
 } from "./Card.styles"
+import * as classes from "./Card.module.css"
 
 const Card = () => {
   return (
-    <Wrapper>
+    <Wrapper className={classes.card}>
       <Header>
         <p>Nov 24 2021</p>
         <h2>Never forget</h2>
