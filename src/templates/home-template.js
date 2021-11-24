@@ -1,10 +1,12 @@
 import { graphql } from "gatsby"
 import React from "react"
 import BlogPostCard from "../components/BlogPostCard"
+import Card from "../components/Card"
+import CardWrapper from "../components/CardWrapper"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
-import Seo from "../components/Seo"
 import PageNavigation from "../components/PageNavigation"
+import Seo from "../components/Seo"
 
 export default function Home({ data, pageContext }) {
   const posts = data.allMdx.nodes
@@ -12,6 +14,12 @@ export default function Home({ data, pageContext }) {
     <Layout>
       <Seo title="Home" />
       <Hero />
+      <CardWrapper>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardWrapper>
       <main>
         <PageNavigation
           currentPage={pageContext.currentPage}
