@@ -35,7 +35,7 @@ export const Avatar = styled.a`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     margin: 16px 10px;
   }
 `
@@ -71,35 +71,6 @@ export const Header = styled.header`
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-    }
-  }
-`
-
-export const Tags = styled.div`
-  margin: 1rem 0 2rem;
-  padding: 0.5rem 0 1rem;
-  line-height: 2;
-  margin-bottom: 0;
-
-  a {
-    font-size: normal;
-    font-weight: 700;
-    font-size: 0.5rem;
-    color: #7a7a8c;
-    text-transform: uppercase;
-    font-size: 0.66rem;
-    border: 3px solid #28242f;
-    border-radius: 2rem;
-    padding: 0.2rem 0.85rem 0.25rem;
-    position: relative;
-
-    :hover {
-      background: linear-gradient(90deg, #ff8a00, #e52e71);
-      text-shadow: none;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      border-color: white;
     }
   }
 `

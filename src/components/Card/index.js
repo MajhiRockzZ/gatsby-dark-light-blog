@@ -1,14 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Link } from "gatsby"
-import {
-  Wrapper,
-  Author,
-  Avatar,
-  HalfCircle,
-  Header,
-  Tags,
-} from "./Card.styles"
+import { Wrapper, Author, Avatar, HalfCircle, Header } from "./Card.styles"
 import * as classes from "./Card.module.css"
 
 const Card = () => {
@@ -33,12 +26,6 @@ const Card = () => {
           Sumesh Majhi
         </div>
       </Author>
-
-      <Tags>
-        <Link to="/">html</Link>
-        <Link to="/">css</Link>
-        <Link to="/">web-dev</Link>
-      </Tags>
     </Wrapper>
   )
 }
