@@ -19,7 +19,7 @@ const BlogPostCard = ({ slug, title, date, readingTime, excerpt, image }) => {
         <GatsbyImage image={getImage(image)} alt={slug} />
       </ImgWrapper>
       <TextWrapper>
-        <Link to={slug}>
+        <Link to={`/${slug}`}>
           <h2>{title}</h2>
         </Link>
         <StatWrapper>
