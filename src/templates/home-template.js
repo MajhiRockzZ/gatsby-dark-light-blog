@@ -4,15 +4,19 @@ import BlogPostCard from "../components/BlogPostCard"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
+import PageNavigation from "../components/PageNavigation"
 
 export default function Home({ data, pageContext }) {
   const posts = data.allMdx.nodes
-  console.log(pageContext)
   return (
     <Layout>
       <Seo title="Home" />
       <Hero />
       <main>
+        <PageNavigation
+          currentPage={pageContext.currentPage}
+          numPages={pageContext.numPages}
+        />
         {posts.map((post, index) => {
           const title = post.frontmatter.title || "No title"
           return (
