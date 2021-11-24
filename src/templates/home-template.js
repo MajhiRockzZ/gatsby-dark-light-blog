@@ -7,7 +7,7 @@ import Seo from "../components/Seo"
 
 export default function Home({ data, pageContext }) {
   const posts = data.allMdx.nodes
-
+  console.log(pageContext)
   return (
     <Layout>
       <Seo title="Home" />

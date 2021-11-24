@@ -1,6 +1,5 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
-const { graphql } = require("gatsby")
 
 // Create the slug for posts and pages
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -81,7 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
       component: path.resolve(`./src/templates/home-template.js`),
-      content: {
+      context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
         numPages,
