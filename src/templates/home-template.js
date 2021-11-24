@@ -8,6 +8,7 @@ import PageNavigation from "../components/PageNavigation"
 
 export default function Home({ data, pageContext }) {
   const posts = data.allMdx.nodes
+  console.log(data)
   return (
     <Layout>
       <Seo title="Home" />
