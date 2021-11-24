@@ -8,7 +8,6 @@ import PageNavigation from "../components/PageNavigation"
 
 export default function Home({ data, pageContext }) {
   const posts = data.allMdx.nodes
-  console.log(data)
   return (
     <Layout>
       <Seo title="Home" />
@@ -38,7 +37,7 @@ export default function Home({ data, pageContext }) {
 }
 
 export const indexQuery = graphql`
-  query blogListQuery($skip: Int, $limit: Int) {
+  query BlogListQuery($skip: Int, $limit: Int) {
     allMdx(
       limit: $limit
       skip: $skip
